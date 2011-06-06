@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?>
+<!-- 
+    - to compile on /bin dir "compile install.xml -b . -o install.jar -k standard"
+-->
+<installation version="1.0">
+    <info>
+        <appname>Store</appname>
+        <appversion>1.0 beta testing</appversion>
+        <authors>
+            <author name="Camilo Hernando Nova" email="camilo.nova@gmail.com"/>
+        </authors>
+        <url>http://camilonova.com/</url>
+    </info>
+    <guiprefs width="640" height="480" resizable="no"/>
+    <locale>
+        <langpack iso3="spa"/>
+        <langpack iso3="eng"/>
+    </locale>
+    <resources>
+        <res id="LicencePanel.licence" src="Licence.txt"/>
+        <res id="InfoPanel.info" src="Readme.txt"/>
+    </resources>
+    <panels>
+        <panel classname="HelloPanel"/>
+        <panel classname="InfoPanel"/>
+        <panel classname="LicencePanel"/>
+        <panel classname="TargetPanel"/> 
+        <panel classname="PacksPanel"/>
+        <panel classname="InstallPanel"/>
+        <panel classname="FinishPanel"/>
+    </panels>
+    <packs>
+        <pack name="Store" required="yes">
+            <description>La aplicacion basica</description>
+            <file src="Readme.txt" targetdir="$INSTALL_PATH"/>
+            <file src="Licence.txt" targetdir="$INSTALL_PATH"/>
+        </pack>
+    </packs>
+    
+</installation>

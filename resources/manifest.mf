@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Sealed: true
+Created-By: Camilo Nova
+Main-Class: com.nova.gui.Store
+Class-Path: libs/liquidlnf.jar libs/mysql-connector-java-3.1.12-bin.jar libs/jasperreports-1.2.2.jar libs/commons-collections-2.1.jar libs/commons-javaflow-20060411.jar libs/commons-logging-1.0.2.jar libs/jcalendar-1.3.2.jar
